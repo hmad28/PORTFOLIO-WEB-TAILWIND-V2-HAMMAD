@@ -1,7 +1,7 @@
 from base64 import b64encode
 
 # Load and read the uploaded HTML file
-file_path = "index.php"
+file_path = "index.html"
 with open(file_path, "r", encoding="utf-8") as file:
     html_content = file.read()
 
