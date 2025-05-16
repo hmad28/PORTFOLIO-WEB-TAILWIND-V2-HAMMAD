@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animasi Scroll Fade In</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 50px;
+      background-color: #fdfdfd;
+    }
+
+    .box {
+      margin: 100px 0;
+      padding: 40px;
+      background-color: #f0f0f0;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contoh Scroll Animation</h1>
+
+  <div class="box" data-aos="fade-up">
+    <h2>Fade Up</h2>
+    <p>Konten ini muncul dari bawah pas kamu scroll.</p>
+  </div>
+
+  <div class="box" data-aos="fade-in">
+    <h2>Fade In</h2>
+    <p>Konten ini akan muncul dengan efek fade in biasa.</p>
+  </div>
+
+  <div class="box" data-aos="zoom-in">
+    <h2>Zoom In</h2>
+    <p>Konten ini zoom masuk pas nongol.</p>
+  </div>
+
+  <div class="box" data-aos="flip-left">
+    <h2>Flip Left</h2>
+    <p>Efek flip dari kiri. Keren buat gambar atau card.</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // durasi animasi dalam ms
+      once: true      // animasi cuma muncul sekali saat scroll pertama
+    });
+  </script>
+
+</body>
+</html>
