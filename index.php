@@ -65,7 +65,7 @@
     <!-- Header End -->
 
     <!-- Home Start -->
-    <section id="home" class="flex flex-col items-center justify-center pt-22 lg:pt-0">
+    <section id="home" class="flex flex-col items-center justify-center pt-18 lg:pt-0">
         <div class="container relative">
             <div class="w-full flex justify-center items-center flex-col relative">
                 <video src="./images/logo hammad final.mp4" autoplay loop muted class="w-full"></video>
@@ -212,7 +212,7 @@
 
                 </div>
             </div>
-            <div class="absolute flex justify-center items-center gap-2 rotate-90 md:top-10 font-bold top-15 -left-16">
+            <div class="absolute flex justify-center items-center gap-2 rotate-90 md:top-10 font-bold top-15 -left-15 md:-left-16">
                 <div class="text-lg md:text-2xl" style="font-family: poppins;">
                     About Me
                 </div>
