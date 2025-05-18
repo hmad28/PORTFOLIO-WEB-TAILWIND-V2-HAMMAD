@@ -507,5 +507,24 @@
     <script>
         AOS.init();
     </script>
+    <script>
+      // Nonaktifin klik kanan
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        alert("Access Denied!");
+      });
+    
+      // Nonaktifin Ctrl+U, F12, dan Ctrl+Shift+I
+      document.addEventListener('keydown', function(e) {
+        if (
+          (e.ctrlKey && e.key === 'u') ||         // Ctrl + U
+          (e.key === 'F12') ||                    // F12
+          (e.ctrlKey && e.shiftKey && e.key === 'I') // Ctrl + Shift + I
+        ) {
+          e.preventDefault();
+          alert("Access Denied!");
+        }
+      });
+    </script>
 </body>
 </html>
